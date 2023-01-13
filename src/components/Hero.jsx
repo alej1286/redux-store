@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Hero = ({heroapi:{title,subtitle,btntext,img,sociallinks,videos}}) => {
-  console.log(img);
+  //console.log(heroapi);
   return (
     <>
     <div className='relative h-auto w-auto flex flex-col'>
@@ -11,7 +11,7 @@ const Hero = ({heroapi:{title,subtitle,btntext,img,sociallinks,videos}}) => {
           <h1 className='text-6xl lg:text-5xl md:text-4xl sm:text-3xl xsm:text-2xl font-extrabold filter drop-shadow-sm text-slate-200'>{title}</h1>
           <h1 className='text-6xl lg:text-5xl md:text-4xl sm:text-3xl xsm:text-2xl font-extrabold filter drop-shadow-sm text-slate-200'>{subtitle}</h1>
           <button type='button' className='button-theme bg-slate-200  shadow-slate-200 rounded-xl my-5'>{btntext}</button>
-          <div className='grid items-center gap-5 md:gap-3 absolute top-[33vh] lg:top-[27vh] left-[11%] xl:left-0 w-auto h-auto'>
+          {/* <div className='grid items-center gap-5 md:gap-3 absolute top-[33vh] lg:top-[27vh] left-[11%] xl:left-0 w-auto h-auto'>
             {videos?.map((val, i) => (
               <Clips
                 key={i}
@@ -27,7 +27,7 @@ const Hero = ({heroapi:{title,subtitle,btntext,img,sociallinks,videos}}) => {
                 icon={val.icon}
               />
             ))}
-          </div>
+          </div> */}
         </div>
         <div className='flex items-center'>
           <img
